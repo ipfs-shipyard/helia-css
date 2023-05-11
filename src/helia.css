@@ -1,0 +1,58 @@
+/*
+
+|_   _ | .  _      _  _  _
+| ) (- | | (_| .  (_ _) _)
+
+See: https://github.com/ipfs-shipyard/helia-css
+*/
+
+@import './inter.css';
+@import './montserrat.css';
+@import './theme.css';
+
+.transition-all {
+  transition: .2s ease all;
+}
+
+.no-select {
+  user-select: none;
+}
+
+.force-select {
+  user-select: all;
+}
+
+.no-pointer-events {
+  pointer-events: none;
+}
+
+.focus-underline:focus {
+  text-decoration: underline;
+}
+
+.focus-outline:focus {
+  outline: 0;
+  box-shadow: 0 0 0 .2rem rgba(201, 210, 215, .4);
+}
+
+.focus-outline-red:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(243, 97, 73, 0.4);
+}
+
+.focus-outline-green:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(10, 202, 159, 0.4);
+}
+
+.stroke-current-color {
+  stroke: currentColor;
+}
+
+.fill-current-color {
+  fill: currentColor;
+}
+
+.fill-white {
+  fill: white;
+}

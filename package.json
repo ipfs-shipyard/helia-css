@@ -1,0 +1,44 @@
+{
+  "name": "helia-css",
+  "version": "0.0.0",
+  "description": "The single-purpose css class names and @font-face config to Helia up your UI",
+  "main": "helia.css",
+  "style": "helia.css",
+  "scripts": {
+    "test": "stylelint **/*.css",
+    "clean": "rm -rf ./docs/* ./fonts ./helia.css ./theme.scss ./vars.scss ./src/theme.css",
+    "build": "run-p build:*",
+    "build:css": "node build/css.js > helia.css",
+    "build:fonts": "mkdir -p fonts; rsync -a --exclude='Inter-Black*' --exclude='Inter-Light*' --exclude='MontserratAlt*' --exclude='Montserrat-Thin*' --exclude='Montserrat-ExtraLight*' --exclude='Montserrat-Black*' --exclude='*.css' --exclude='README*' --exclude='InterDisplay*' --exclude='Inter-Thin*' src/fonts/inter/docs/font-files/ src/fonts/montserrat/fonts/webfonts/ fonts",
+    "build:icons": "cp -a icons/. docs/icons/",
+    "build:licenses": "cp src/fonts/inter/LICENSE.txt fonts/Inter-LICENSE.txt; cp src/fonts/montserrat/OFL.txt fonts/Montserrat-LICENSE.txt;",
+    "build:docs": "node build/icons-page.js > docs/index.html",
+    "deploy:docs": "rsync -aq --delete icons docs/; ipfs add --cid-version 1 -r -Q docs"
+  },
+  "author": "olizilla",
+  "license": "MIT",
+  "devDependencies": {
+    "aegir": "^39.0.6",
+    "autoprefixer": "^10.4.8",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.16",
+    "postcss-import": "^14.1.0",
+    "standard": "^17.0.0",
+    "stylelint": "^14.10.0",
+    "stylelint-config-recommended": "^9.0.0"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-recommended"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipfs-shipyard/helia-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ipfs-shipyard/helia-css/issues"
+  },
+  "homepage": "https://github.com/ipfs-shipyard/helia-css#readme"
+}
