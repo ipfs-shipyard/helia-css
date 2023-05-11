@@ -1,4 +1,4 @@
-# helia-css
+# @helia/css <!-- omit in toc -->
 
 > 🍴 Forked from https://github.com/ipfs-shipyard/ipfs-css
 
@@ -6,23 +6,35 @@ The single-purpose CSS class names and @font-face config to Helia up your UI.
 
 Pairs well with [tachyons].
 
+## Table of contents <!-- omit in toc -->
+
+- [Install](#install)
+- [Usage](#usage)
+  - [CSS in JS](#css-in-js)
+  - [Less](#less)
+  - [SCSS](#scss)
+- [Icons](#icons)
+- [Colors](#colors)
+- [License](#license)
+- [Contribute](#contribute)
+
 ## Install
 
-Add `helia-css` to your project via npm:
+Add `@helia/css` to your project via npm:
 
 ```sh
-npm install helia-css
+npm install @helia/css
 ```
 
 ## Usage
 
-Once you've installed helia-css from npm, the CSS and SCSS files and the web-fonts are available from your `node_modules/helia-css` directory.
+Once you've installed `@helia/css` from npm, the CSS and SCSS files and the web-fonts are available from your `node_modules/@helia/css` directory.
 
 If you are set up with a build process that lets you import css files directly from `node_modules`, then you can just add the following to your CSS file.
 
 ```css
 @import 'tachyons'; /* Optional, jolly good tho */
-@import 'helia-css';
+@import '@helia/css';
 ```
 
 The file includes font-face definitions and single purpose CSS class names that you can compose freely, to create your lovely UI.
@@ -73,59 +85,24 @@ See: https://dweb.link/ipfs/bafybeiebays3i7aem7tptga3kilzux7f5gz6czl4dietazgutcj
 
 <img title='#f3f4f7' src='https://swatch.now.sh?color=%23f3f4f7&name=snow' /><img title='#f7f8fa' src='https://swatch.now.sh?color=%23f7f8fa&name=snow-muted' /><img title='#117eb3' src='https://swatch.now.sh?color=%23117eb3&name=link' />
 
-## Releasing
+## License
 
-First, clean and build the CSS and the docs.
+Licensed under either of
 
-```console
-# Clean then build your local workspace
-$ npm run clean
-$ npm run build
-```
-
-Next, with IPFS running locally, add the docs to IPFS, to get the new CID.
-
-```console
-# Add the docs to IPFS to get the CID
-$ npm run -s deploy:docs
-QmQYzfzGKAeBWgarrmTSsG2PJ8AFfFEBprhVBFaudcFTof
-```
-
-Pin the CID to ipfs-cluster (via #pinbot on IRC or your preferred method). Update the README.md with the new docs link.
-
-Then bump the version, push to GitHub and publish to npm. If you are adding an icon, that's a minor release. Fixing an issue with an existing icon would be a patch. Changing any of the color values would be at least a minor. Changing the naming scheme for the CSS classes would be a major release.
-
-```console
-# use npm to bump the version and tag
-$ npm version minor
-
-# Push the changes back to the repo
-$ git push origin master
-$ git push --tags
-
-# PUBLISH!
-$ npm publish
-```
+- Apache 2.0, ([LICENSE-APACHE](LICENSE-APACHE) / <http://www.apache.org/licenses/LICENSE-2.0>)
+- MIT ([LICENSE-MIT](LICENSE-MIT) / <http://opensource.org/licenses/MIT>)
 
 ## Contribute
 
-Contributions are more than welcome! Check out the [currently open issues](https://github.com/ipfs-shipyard/helia-css/issues) and start hacking on anything that sounds interesting. Issues are labeled with a variety of tags to help you find a good fit — you may wish to start with the [`help-wanted`](https://github.com/ipfs-shipyard/ipfs-share-files/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) tag.
+Contributions welcome! Please check out [the issues](https://github.com/ipfs/js-ipfs-unixfs/issues).
 
-To contribute to IPFS in general, check out the wide variety of opportunities [here](https://docs.ipfs.io/community/contribute/ways-to-contribute).
+Also see our [contributing document](https://github.com/ipfs/community/blob/master/CONTRIBUTING_JS.md) for more information on how we work, and about contributing in general.
 
-The IPFS community believes that our mission is best served in an environment that is friendly, safe, and accepting, and free from intimidation or harassment. To that end, we ask that everyone involved in IPFS read and respect our [code of conduct](https://github.com/ipfs/community/blob/master/code-of-conduct.md).
+Please be aware that all interactions related to this repo are subject to the IPFS [Code of Conduct](https://github.com/ipfs/community/blob/master/code-of-conduct.md).
 
-## License
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the Apache-2.0 license, shall be dual licensed as above, without any additional terms or conditions.
 
-The [Monserrat font family](https://github.com/JulietaUla/Montserrat) © The Montserrat Project Authors (https://github.com/JulietaUla/Montserrat) is used under the [SIL Open Font License, Version 1.1.](https://github.com/JulietaUla/Montserrat/blob/21047be7ebcae5e71328358fcf20566cb85383ec/OFL.txt)
-
-The [Inter font family](https://github.com/rsms/inter/blob/master/LICENSE.txt) © The Inter Project Authors (me@rsms.me) is used under the [SIL Open Font License, Version 1.1.](https://github.com/rsms/inter/blob/fa8a99377e8d51d6c0721a4b4c96d91911399dcf/LICENSE.txt)
-
-The home icon © Icons8 is under their [Free License](https://icons8.com/license)
-
-All other documents and icons are [CC-BY-SA 3.0] license © 2018 Protocol Labs Inc.
-
-Code is under the [MIT](./LICENSE) © 2018 Protocol Labs Inc.
+[![](https://cdn.rawgit.com/jbenet/contribute-ipfs-gif/master/img/contribute.gif)](https://github.com/ipfs/community/blob/master/CONTRIBUTING.md)
 
 [ipfs.io]: https://ipfs.io
 [tachyons]: http://tachyons.io

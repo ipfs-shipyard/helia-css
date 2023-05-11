@@ -1,9 +1,107 @@
 {
-  "name": "helia-css",
+  "name": "@helia/css",
   "version": "0.0.0",
   "description": "The single-purpose css class names and @font-face config to Helia up your UI",
+  "license": "Apache-2.0 OR MIT",
+  "homepage": "https://github.com/ipfs-shipyard/helia-css#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ipfs-shipyard/helia-css.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ipfs-shipyard/helia-css/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.6.0"
+  },
   "main": "helia.css",
   "style": "helia.css",
+  "release": {
+    "branches": [
+      "main"
+    ],
+    "plugins": [
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "conventionalcommits",
+          "releaseRules": [
+            {
+              "breaking": true,
+              "release": "major"
+            },
+            {
+              "revert": true,
+              "release": "patch"
+            },
+            {
+              "type": "feat",
+              "release": "minor"
+            },
+            {
+              "type": "fix",
+              "release": "patch"
+            },
+            {
+              "type": "docs",
+              "release": "patch"
+            },
+            {
+              "type": "test",
+              "release": "patch"
+            },
+            {
+              "type": "deps",
+              "release": "patch"
+            },
+            {
+              "scope": "no-release",
+              "release": false
+            }
+          ]
+        }
+      ],
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "preset": "conventionalcommits",
+          "presetConfig": {
+            "types": [
+              {
+                "type": "feat",
+                "section": "Features"
+              },
+              {
+                "type": "fix",
+                "section": "Bug Fixes"
+              },
+              {
+                "type": "chore",
+                "section": "Trivial Changes"
+              },
+              {
+                "type": "docs",
+                "section": "Documentation"
+              },
+              {
+                "type": "deps",
+                "section": "Dependencies"
+              },
+              {
+                "type": "test",
+                "section": "Tests"
+              }
+            ]
+          }
+        }
+      ],
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      "@semantic-release/git"
+    ]
+  },
   "scripts": {
     "test": "stylelint **/*.css",
     "clean": "rm -rf ./docs/* ./fonts ./helia.css ./theme.scss ./vars.scss ./src/theme.css",
@@ -13,10 +111,9 @@
     "build:icons": "cp -a icons/. docs/icons/",
     "build:licenses": "cp src/fonts/inter/LICENSE.txt fonts/Inter-LICENSE.txt; cp src/fonts/montserrat/OFL.txt fonts/Montserrat-LICENSE.txt;",
     "build:docs": "node build/icons-page.js > docs/index.html",
-    "deploy:docs": "rsync -aq --delete icons docs/; ipfs add --cid-version 1 -r -Q docs"
+    "deploy:docs": "rsync -aq --delete icons docs/; ipfs add --cid-version 1 -r -Q docs",
+    "release": "aegir release"
   },
-  "author": "olizilla",
-  "license": "MIT",
   "devDependencies": {
     "aegir": "^39.0.6",
     "autoprefixer": "^10.4.8",
@@ -32,13 +129,5 @@
   },
   "directories": {
     "doc": "docs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ipfs-shipyard/helia-css.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ipfs-shipyard/helia-css/issues"
-  },
-  "homepage": "https://github.com/ipfs-shipyard/helia-css#readme"
+  }
 }
