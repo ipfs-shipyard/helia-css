@@ -1,23 +1,8 @@
 # helia-css
 
-> Forked from https://github.com/ipfs-shipyard/ipfs-css
+> 🍴 Forked from https://github.com/ipfs-shipyard/ipfs-css
 
 The single-purpose CSS class names and @font-face config to Helia up your UI.
-
-```css
-/* ---- font ----- */
-.sans-serif { font-family: 'Inter', system-ui, sans-serif; }
-.montserrat { font-family: 'Montserrat', 'Verdana', system-ui, sans-serif; }
-.monospace { font-family: Consolas, monaco, monospace; }
-
-/* ---- color ----- */
-.navy { color: #073a53; }
-.navy-muted { color: #244e66; }
-.aqua { color: #69c4cd; }
-.aqua-muted { color: #9ad4db; }
-
-/* ...and (just a little) more! */
-```
 
 Pairs well with [tachyons].
 
