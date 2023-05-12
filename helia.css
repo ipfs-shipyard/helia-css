@@ -304,7 +304,7 @@ See: https://github.com/ipfs-shipyard/helia-css
 
 .yellow { color: #f7df1e; }
 
-.yellow-muted { color: #f9a13e; }
+.yellow-muted { color: #ede180; }
 
 .teal { color: #378085; }
 
@@ -344,7 +344,7 @@ See: https://github.com/ipfs-shipyard/helia-css
 
 .bg-yellow { background-color: #f7df1e; }
 
-.bg-yellow-muted { background-color: #f9a13e; }
+.bg-yellow-muted { background-color: #ede180; }
 
 .bg-teal { background-color: #378085; }
 
@@ -384,7 +384,7 @@ See: https://github.com/ipfs-shipyard/helia-css
 
 .hover-yellow:hover, .hover-yellow:focus { color: #f7df1e; }
 
-.hover-yellow-muted:hover, .hover-yellow-muted:focus { color: #f9a13e; }
+.hover-yellow-muted:hover, .hover-yellow-muted:focus { color: #ede180; }
 
 .hover-teal:hover, .hover-teal:focus { color: #378085; }
 
@@ -424,7 +424,7 @@ See: https://github.com/ipfs-shipyard/helia-css
 
 .hover-bg-yellow:hover, .hover-bg-yellow:focus { background-color: #f7df1e; }
 
-.hover-bg-yellow-muted:hover, .hover-bg-yellow-muted:focus { background-color: #f9a13e; }
+.hover-bg-yellow-muted:hover, .hover-bg-yellow-muted:focus { background-color: #ede180; }
 
 .hover-bg-teal:hover, .hover-bg-teal:focus { background-color: #378085; }
 
@@ -464,7 +464,7 @@ See: https://github.com/ipfs-shipyard/helia-css
 
 .fill-yellow { fill: #f7df1e; }
 
-.fill-yellow-muted { fill: #f9a13e; }
+.fill-yellow-muted { fill: #ede180; }
 
 .fill-teal { fill: #378085; }
 
@@ -504,7 +504,7 @@ See: https://github.com/ipfs-shipyard/helia-css
 
 .hover-fill-yellow:hover, .hover-fill-yellow:focus { fill: #f7df1e; }
 
-.hover-fill-yellow-muted:hover, .hover-fill-yellow-muted:focus { fill: #f9a13e; }
+.hover-fill-yellow-muted:hover, .hover-fill-yellow-muted:focus { fill: #ede180; }
 
 .hover-fill-teal:hover, .hover-fill-teal:focus { fill: #378085; }
 
@@ -544,7 +544,7 @@ See: https://github.com/ipfs-shipyard/helia-css
 
 .border-yellow, .b--yellow { border-color: #f7df1e; }
 
-.border-yellow-muted, .b--yellow-muted { border-color: #f9a13e; }
+.border-yellow-muted, .b--yellow-muted { border-color: #ede180; }
 
 .border-teal, .b--teal { border-color: #378085; }
 
