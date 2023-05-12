@@ -79,7 +79,7 @@ See: https://dweb.link/ipfs/bafybeiebays3i7aem7tptga3kilzux7f5gz6czl4dietazgutcj
 
 <img title='#b7bbc8' src='https://swatch.now.sh?color=%23b7bbc8&name=gray' /><img title='#d9dbe2' src='https://swatch.now.sh?color=%23d9dbe2&name=gray-muted' /><img title='#34373f' src='https://swatch.now.sh?color=%2334373f&name=charcoal' /><img title='#7f8491' src='https://swatch.now.sh?color=%237f8491&name=charcoal-muted' />
 
-<img title='#ea5037' src='https://swatch.now.sh?color=%23ea5037&name=red' /><img title='#f36149' src='https://swatch.now.sh?color=%23f36149&name=red-muted' /><img title='#f7df1e' src='https://swatch.now.sh?color=%23f7df1e&name=yellow' /><img title='#f9a13e' src='https://swatch.now.sh?color=%23f9a13e&name=yellow-muted' />
+<img title='#ea5037' src='https://swatch.now.sh?color=%23ea5037&name=red' /><img title='#f36149' src='https://swatch.now.sh?color=%23f36149&name=red-muted' /><img title='#ede180' src='https://swatch.now.sh?color=%23f7df1e&name=yellow' /><img title='#ede180' src='https://swatch.now.sh?color=%23ede180&name=yellow-muted' />
 
 <img title='#378085' src='https://swatch.now.sh?color=%23378085&name=teal' /><img title='#439a9d' src='https://swatch.now.sh?color=%23439a9d&name=teal-muted' /><img title='#0cb892' src='https://swatch.now.sh?color=%230cb892&name=green' /><img title='#0aca9f' src='https://swatch.now.sh?color=%230aca9f&name=green-muted' />
 
