@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/ipfs-shipyard/helia-css/compare/v1.0.0...v1.0.1) (2023-05-12)
+
+
+### Bug Fixes
+
+* update logos and colours ([#1](https://github.com/ipfs-shipyard/helia-css/issues/1)) ([a217505](https://github.com/ipfs-shipyard/helia-css/commit/a21750519635998d62dcdb2a63061cf78381950b))
+
 ## 1.0.0 (2023-05-11)
 
 
