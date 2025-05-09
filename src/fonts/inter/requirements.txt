@@ -9,4 +9,4 @@ skia-pathops==0.2.0.post2
 MutatorMath==2.1.2
 
 # for woff2
-brotli==1.0.7
+brotli==1.0.8
